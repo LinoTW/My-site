@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aetheris | Deep Space Exploration & Cosmic Research</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore the deep frontier with Aetheris. Join our journey into the unknown as we survey distant nebulas, discover habitable exoplanets, and advance quantum interstellar propulsion.">
+  <meta name="keywords" content="Space Exploration, Nebula, Exoplanets, Space Probe, Quantum Propulsion, Sci-Fi, Cosmos">
+  <meta name="author" content="Aetheris Space Agency">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- 1. HEADER SECTION -->
+  <header class="header" id="site-header">
+    <div class="container header-container">
+      <a href="#" class="logo" id="header-logo">
+        Aetheris
+      </a>
+      
+      <nav class="nav-menu" id="header-nav">
+        <ul class="nav-links">
+          <li><a href="#home" id="nav-link-home">Home</a></li>
+          <li><a href="#missions" id="nav-link-missions">Missions</a></li>
+          <li><a href="#about" id="nav-link-about">About Us</a></li>
+          <li><a href="#contact" id="nav-link-contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <button class="header-cta" id="btn-header-launch" onclick="alert('Preparing launch sequence... System Check: 100% OK.')">
+        Launch Portal
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. MAIN VISUAL (HERO SECTION) -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-tagline">Deep Space Initiative</span>
+          <h1 class="hero-title">Charting The <span>Unknown</span></h1>
+          <p class="hero-desc">
+            Aetheris pushes the boundaries of human knowledge by surveying uncharted galaxies, detecting habitable exoplanets, and engineering next-generation warp propulsion systems.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn-primary" id="btn-hero-explore" onclick="document.getElementById('missions').scrollIntoView({behavior: 'smooth'})">
+              Explore Missions
+            </button>
+            <button class="btn-secondary" id="btn-hero-telemetry" onclick="alert('Accessing live orbital telemetry. Node: SOL-3. Speed: 29.78 km/s. Signal: Strong.')">
+              Live Telemetry
+            </button>
+          </div>
+        </div>
+        
+        <div class="hero-image-wrapper">
+          <div class="hero-portal"></div>
+          <div class="hero-img-container">
+            <img src="images/main-visual.png" alt="Futuristic spaceship approaching a glowing cosmic nebula" id="hero-main-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. DESCRIPTION SECTION -->
+    <section class="description-section" id="missions">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Strategic Horizons</span>
+          <h2 class="section-title">Our Scientific Pillars</h2>
+          <p class="section-subtitle">
+            Leveraging state-of-the-art spacecraft and quantum AI to decipher the universe’s most profound mysteries.
+          </p>
+        </div>
+
+        <!-- Glassmorphic Grid Cards -->
+        <div class="cards-grid">
+          <!-- Card 1: Exoplanet Discovery -->
+          <article class="glass-card" id="card-exoplanets">
+            <div class="card-icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3 class="card-title">Exoplanet Surveys</h3>
+            <p class="card-text">
+              Scanning distant solar systems using advanced biosignature analysis to locate Earth-like worlds and potential habitats for future generations.
+            </p>
+          </article>
+
+          <!-- Card 2: Deep Nebula Surveys -->
+          <article class="glass-card" id="card-nebula">
+            <div class="card-icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 class="card-title">Stellar Breeding</h3>
+            <p class="card-text">
+              Probing high-energy stellar nurseries and nebulae to unlock the raw chemistry of early star formation and heavy element genesis.
+            </p>
+          </article>
+
+          <!-- Card 3: Quantum Interstellar Propulsion -->
+          <article class="glass-card" id="card-propulsion">
+            <div class="card-icon">
+              <i class="fa-solid fa-atom"></i>
+            </div>
+            <h3 class="card-title">Quantum Drives</h3>
+            <p class="card-text">
+              Harnessing zero-point energy and space-time folding mechanisms to build propulsion units capable of crossing stellar systems in weeks.
+            </p>
+          </article>
+        </div>
+
+        <!-- Interactive Statistics Banner -->
+        <div class="stats-banner" id="cosmic-stats">
+          <div class="stat-item">
+            <div class="stat-number" id="stat-worlds">48+</div>
+            <div class="stat-label">Worlds Found</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="stat-probes">12</div>
+            <div class="stat-label">Active Probes</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="stat-distance">1.8M</div>
+            <div class="stat-label">Light Years</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="stat-safety">99.4%</div>
+            <div class="stat-label">Mission Safety</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 4. FOOTER SECTION -->
+  <footer class="footer" id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <a href="#" class="logo" id="footer-logo">Aetheris</a>
+          <p class="footer-desc">
+            Aetheris is an independent aerospace and interstellar science network committed to expanding the frontier of human civilization into the galaxy.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="X (Twitter)" id="social-x"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="YouTube" id="social-youtube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-icon" aria-label="GitHub" id="social-github"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-icon" aria-label="Discord" id="social-discord"><i class="fa-brands fa-discord"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Exploration</h4>
+          <ul class="footer-links">
+            <li><a href="#home" id="footer-link-home">Home Portal</a></li>
+            <li><a href="#missions" id="footer-link-pillars">Scientific Pillars</a></li>
+            <li><a href="#" id="footer-link-careers">Careers</a></li>
+            <li><a href="#" id="footer-link-press">Press Kit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Cosmic Feed</h4>
+          <p class="newsletter-desc">Subscribe to receive orbital reports, breakthrough research, and launch windows.</p>
+          <form class="newsletter-form" id="form-newsletter" onsubmit="event.preventDefault(); alert('Transmission confirmed! Welcome to the Aetheris grid.'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Enter grid coordinates (email)" required id="input-newsletter-email">
+            <button type="submit" class="newsletter-btn" id="btn-newsletter-submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aetheris Space Agency. All telemetry and mission logs are open source.</p>
+        <div class="footer-meta">
+          <a href="#" id="footer-meta-privacy">Privacy Shield</a>
+          <a href="#" id="footer-meta-terms">Terms of Agreement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
